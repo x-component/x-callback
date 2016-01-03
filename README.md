@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/x-component/x-callback.png?v0.0.0)](https://travis-ci.org/x-component/x-callback)
+[![Build Status](https://travis-ci.org/x-component/x-callback.png?v0.0.1)](https://travis-ci.org/x-component/x-callback)
 =======================================================================================================
 
 

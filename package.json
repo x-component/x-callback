@@ -1,9 +1,9 @@
 {
   "name": "x-callback",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "x-log": "~0.0"
+    "x-log": "1.x.x"
   },
   "description": "wrapper for a callback, to make calling unkown middlewares safer. Catches exceptions and errors and logs them",
   "keywords": [
@@ -15,14 +15,14 @@
     "type": "git",
     "url": "https://github.com/x-component/x-callback.git"
   },
-  "devDependencies": {
-    "x-common": "~0.0",
-    "vows": "~0.7",
-    "dox-basic": "~0.0"
+  "devDependencies":{
+    "x-common" : "1.x.x",
+    "x-publish": "1.x.x",
+    "vows"     : "latest"
   },
   "main": "callback.js",
   "scripts": {
-    "prepublish": "cat ./callback.js | node ./node_modules/dox-basic/bin/dox-basic -m -t \"[![Build Status](https://travis-ci.org/x-component/$npm_package_name.png?v$npm_package_version)](https://travis-ci.org/x-component/$npm_package_name)\" > README.md",
-    "test": "vows ./test/*.test.js"
+    "prepublish" : "./node_modules/x-publish/scripts/prepublish.sh",
+    "test"       : "vows ./test/*.test.js"
   }
 }
